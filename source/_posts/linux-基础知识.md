@@ -15,12 +15,12 @@ categories:
 ### 组成部分
 
 - 输入单元
-- CPU
+- CPU<!--more-->
 - 内存
 - 外部存储设备
 - 输出单元
 
-<!--more-->
+
 
 ### 分类
 
@@ -29,10 +29,6 @@ categories:
 - 迷你计算机
 - 工作站
 - 微电脑
-
-
-
-
 
 
 
@@ -48,7 +44,7 @@ B=>K=>M=>G=>T=>P=>E
 
 因为传统linux系统只有命令行模式，所以需要使用各种命令，但是记住所有的命令和参数这是几乎不可能的，所以知道如何获取帮助非常重要。
 
-获取帮助的命令主要有三个，help, man, info
+获取帮助的命令主要有三个，help, man, info。这三个得到的查询结果详细程度依次递增。
 
 **help命令**
 
@@ -62,13 +58,5 @@ help echo
 
 
 
-![image.png](https://wx3.sinaimg.cn/mw690/b146837bly1gbsy3grssnj21fd09qwff.jpg)
-
-
-
-**man**
-
-也是经常使用的命令，比help更加详细
-
-示例：
+![b146837bly1gbsy3grssnj21fd09qwff.jpg](https://i.loli.net/2020/02/20/jNaxOQpHEnBAWZy.jpg)
 

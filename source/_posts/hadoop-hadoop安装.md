@@ -44,7 +44,7 @@ categories:
 
   新建HADOOP_HOME, 我的配置：C:\hadoop-2.10.0\bin
 
-  ![配置](https://wx4.sinaimg.cn/mw690/b146837bly1gbxf3b0kv0j20s9071dfu.jpg)
+  ![b146837bly1gbxf3b0kv0j20s9071dfu.jpg](https://i.loli.net/2020/02/20/T9MjvyiPe8rcE5H.jpg)
 
 ​     在PATH变量中添加：%HADOOP_HOME%
 
@@ -83,7 +83,7 @@ categories:
   start-all.cmd
   ```
 
-  ![success](https://wx2.sinaimg.cn/mw690/b146837bly1gbxfmuf908j20z50li7gm.jpg)
+  ![b146837bly1gbxfmuf908j20z50li7gm.jpg](https://i.loli.net/2020/02/20/Lupda64fCRmJEHo.jpg)
 
   验证是否成功：
 

@@ -26,7 +26,7 @@
 <li><p>配置hadoop环境变量</p>
 <p>我的电脑-&gt;属性-&gt;高级系统设置-&gt;环境变量-&gt;系统变量</p>
 <p>新建HADOOP_HOME, 我的配置：C:\hadoop-2.10.0\bin</p>
-<p><img src="https://wx4.sinaimg.cn/mw690/b146837bly1gbxf3b0kv0j20s9071dfu.jpg" alt="配置"></p>
+<p><img src="https://i.loli.net/2020/02/20/T9MjvyiPe8rcE5H.jpg" alt="b146837bly1gbxf3b0kv0j20s9071dfu.jpg"></p>
 </li>
 </ul>
 <p>​     在PATH变量中添加：%HADOOP_HOME%</p>
@@ -42,7 +42,7 @@
 <li><p>到安装根目录下的sbin目录，执行</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">start-all.cmd</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://wx2.sinaimg.cn/mw690/b146837bly1gbxfmuf908j20z50li7gm.jpg" alt="success"></p>
+<p><img src="https://i.loli.net/2020/02/20/Lupda64fCRmJEHo.jpg" alt="b146837bly1gbxfmuf908j20z50li7gm.jpg"></p>
 <p>验证是否成功：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jps</span><br></pre></td></tr></table></figure>
 
@@ -68,13 +68,11 @@
     <url>/2020/02/12/linux-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<h1 id="计算机"><a href="#计算机" class="headerlink" title="计算机"></a>计算机</h1><h3 id="组成部分"><a href="#组成部分" class="headerlink" title="组成部分"></a>组成部分</h3><ul>
 <li>输入单元</li>
-<li>CPU</li>
+<li>CPU<a id="more"></a></li>
 <li>内存</li>
 <li>外部存储设备</li>
 <li>输出单元</li>
 </ul>
-<a id="more"></a>
-
 <h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul>
 <li>超级计算机</li>
 <li>大型计算机</li>
@@ -85,7 +83,7 @@
 <h3 id="文件大小"><a href="#文件大小" class="headerlink" title="文件大小"></a>文件大小</h3><p>B=&gt;K=&gt;M=&gt;G=&gt;T=&gt;P=&gt;E</p>
 <p>关系都是1024的倍数，如1M=1024K</p>
 <h1 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h1><p>因为传统linux系统只有命令行模式，所以需要使用各种命令，但是记住所有的命令和参数这是几乎不可能的，所以知道如何获取帮助非常重要。</p>
-<p>获取帮助的命令主要有三个，help, man, info</p>
+<p>获取帮助的命令主要有三个，help, man, info。这三个得到的查询结果详细程度依次递增。</p>
 <p><strong>help命令</strong></p>
 <p>help 命令经常使用，可以简洁的列出命令使用方法</p>
 <p>示例：</p>
@@ -93,10 +91,7 @@
 
 
 
-<p><img src="https://wx3.sinaimg.cn/mw690/b146837bly1gbsy3grssnj21fd09qwff.jpg" alt="image.png"></p>
-<p><strong>man</strong></p>
-<p>也是经常使用的命令，比help更加详细</p>
-<p>示例：</p>
+<p><img src="https://i.loli.net/2020/02/20/jNaxOQpHEnBAWZy.jpg" alt="b146837bly1gbsy3grssnj21fd09qwff.jpg"></p>
 ]]></content>
       <categories>
         <category>Linux</category>

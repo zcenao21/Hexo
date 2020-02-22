@@ -100,16 +100,8 @@ RDD转换
         
   <div class="addthis addthis_toolbox addthis_default_style">
     
-      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
     
     
-      <a class="addthis_button_tweet"></a>
-    
-    
-      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    
-    
-      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
     
     <a class="addthis_counter addthis_pill_style"></a>
   </div>
@@ -126,21 +118,30 @@ RDD转换
   <h1 class="title">Comments</h1>
 
   
-      <div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<div class="fb-comments" data-href="http://yoursite.com/2019/11/02/spark%E7%9B%AE%E5%BD%95/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
-      
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+  </div>
   
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NzIyNi8yMzcyNg==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
 </section>
+
 
 </div></div>
     <aside id="sidebar" class="alignright">
@@ -156,6 +157,8 @@ RDD转换
 <div class="widget tag">
   <h3 class="title">Categories</h3>
   <ul class="entry">
+  
+    <li><a href="/categories/Hive/">Hive</a><small>2</small></li>
   
     <li><a href="/categories/Linux/">Linux</a><small>1</small></li>
   
@@ -186,17 +189,27 @@ RDD转换
   
     <li><a href="/tags/hadoop安装/">hadoop安装</a><small>1</small></li>
   
+    <li><a href="/tags/hive/">hive</a><small>2</small></li>
+  
     <li><a href="/tags/linux目录/">linux目录</a><small>1</small></li>
   
     <li><a href="/tags/spark架构/">spark架构</a><small>1</small></li>
   
     <li><a href="/tags/spark目录/">spark目录</a><small>1</small></li>
   
+    <li><a href="/tags/udaf/">udaf</a><small>1</small></li>
+  
+    <li><a href="/tags/udf/">udf</a><small>1</small></li>
+  
     <li><a href="/tags/windows-10/">windows 10</a><small>1</small></li>
   
     <li><a href="/tags/基础知识/">基础知识</a><small>1</small></li>
   
     <li><a href="/tags/大数据工具/">大数据工具</a><small>1</small></li>
+  
+    <li><a href="/tags/开发/">开发</a><small>1</small></li>
+  
+    <li><a href="/tags/源码/">源码</a><small>1</small></li>
   
   </ul>
 </div>
@@ -231,6 +244,18 @@ RDD转换
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
+
+<script type="text/javascript">
+var disqus_shortname = 'https-zcenao21-github-io';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
 
 
 

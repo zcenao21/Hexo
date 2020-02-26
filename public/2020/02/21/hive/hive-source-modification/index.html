@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>hive源码调试入门 | Will&#39;s BigData Field</title>
+  <meta name="author" content="Will">
+  
+  <meta name="description" content="在windows上折腾安装好了hadoop，hive因为文件路径太长不支持等各种奇奇怪怪的问题始终运行不起来，下了大决心放弃windows系统，unbuntu走起！重装系统还算顺利，几个小时搞定。然后就是ubuntu上运行hadoop,成功; ubuntu上运行hive，成功！下一步hive源码走起。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="hive源码调试入门"/>
+  <meta property="og:site_name" content="Will&#39;s BigData Field"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Will&#39;s BigData Field" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Will&#39;s BigData Field</a></h1>
+  <h2><a href="/">hello world!</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-hive/hive-source-modification" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2020-02-21T04:45:21.000Z"><a href="/2020/02/21/hive/hive-source-modification/">2020-02-21</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">hive源码调试入门</h1>
+  
+
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>在windows上折腾安装好了hadoop，hive因为文件路径太长不支持等各种奇奇怪怪的问题始终运行不起来，下了大决心放弃windows系统，unbuntu走起！重装系统还算顺利，几个小时搞定。然后就是ubuntu上运行hadoop,成功; ubuntu上运行hive，成功！下一步hive源码走起。<a id="more"></a></p>
+<p>hive依赖hadoop，看hive启动脚本，最终是调用hadoop启动，而hadoop最终还是执行的java -jar xxx.jar形式，所以决定先从hive java源码入口看。先试一试改动源码打印个信息。</p>
+<p>首先在hive的main函数入口增加一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;Will&#39;s first hive source code modification: test err print info&quot;);</span><br></pre></td></tr></table></figure>
+
+<img src="https://i.loli.net/2020/02/21/bQOyidqXgsMR3Ca.png" alt="启动" style="zoom:80%;" />
+
+<p>打包，然后替换lib目录下hive-cli-xxx.jar。</p>
+<p>运行hive</p>
+<p><img src="https://i.loli.net/2020/02/21/LZ16gVt4rfdXqyu.png" alt="选区_001.png"></p>
+<p>好啦，正式开启与hive源码的斗争！</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Hive/">Hive</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/hive/">hive</a>, <a href="/tags/源码/">源码</a>, <a href="/tags/开发/">开发</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+    
+    
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
+
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+  </div>
+  
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NzIyNi8yMzcyNg==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+</section>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="as_sitesearch" value="yoursite.com">
+  </form>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Hive/">Hive</a><small>2</small></li>
+  
+    <li><a href="/categories/Linux/">Linux</a><small>1</small></li>
+  
+    <li><a href="/categories/Spark/">Spark</a><small>3</small></li>
+  
+    <li><a href="/categories/hadoop/">hadoop</a><small>1</small></li>
+  
+    <li><a href="/categories/other/">other</a><small>2</small></li>
+  
+    <li><a href="/categories/目录/">目录</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/High-Performance-Spark/">High Performance Spark</a><small>3</small></li>
+  
+    <li><a href="/tags/Linux/">Linux</a><small>1</small></li>
+  
+    <li><a href="/tags/RDD/">RDD</a><small>1</small></li>
+  
+    <li><a href="/tags/Spark/">Spark</a><small>3</small></li>
+  
+    <li><a href="/tags/github个人网站/">github个人网站</a><small>2</small></li>
+  
+    <li><a href="/tags/hadoop/">hadoop</a><small>1</small></li>
+  
+    <li><a href="/tags/hadoop安装/">hadoop安装</a><small>1</small></li>
+  
+    <li><a href="/tags/hive/">hive</a><small>2</small></li>
+  
+    <li><a href="/tags/linux目录/">linux目录</a><small>1</small></li>
+  
+    <li><a href="/tags/spark架构/">spark架构</a><small>1</small></li>
+  
+    <li><a href="/tags/spark目录/">spark目录</a><small>1</small></li>
+  
+    <li><a href="/tags/udaf/">udaf</a><small>1</small></li>
+  
+    <li><a href="/tags/udf/">udf</a><small>1</small></li>
+  
+    <li><a href="/tags/windows-10/">windows 10</a><small>1</small></li>
+  
+    <li><a href="/tags/域名修改/">域名修改</a><small>2</small></li>
+  
+    <li><a href="/tags/基础知识/">基础知识</a><small>1</small></li>
+  
+    <li><a href="/tags/大数据工具/">大数据工具</a><small>1</small></li>
+  
+    <li><a href="/tags/开发/">开发</a><small>1</small></li>
+  
+    <li><a href="/tags/源码/">源码</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2020 Will
+  
+  
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv" style='display:none'>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+  
+</div>
+<div class="clearfix"></div>
+</footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'https-zcenao21-github-io';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

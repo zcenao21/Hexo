@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>github个人网站替换自定义域名</title>
+    <url>/2020/02/24/other/github%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%9B%B4%E6%94%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>首先非常感谢github提供的个人网站功能，然后感谢hexo提供了方便的写博客手段。<br>github个人建站，一般访问网站名为xxx.github.io，这种名字对于强迫症患者来说真的是无法忍受。但是github也提供了更改为自定义域名功能，非常人性化。</p>
+<a id="more"></a>
+<p>所以如果你没有把博客迁到国内服务器的需求，只需要替换一下域名即可。下面说一下我的操作步骤，主要还在申请域名上。</p>
+<h3 id="域名申请"><a href="#域名申请" class="headerlink" title="域名申请"></a>域名申请</h3><p>经过我的一番调研，最终选用了godaddy的域名服务。国内的也有很多，大家根据需要选择。<br>接下来就是申请域名了。先选择一个自己喜欢的域名前缀，最好比较好记，方便自己也方便他人。域名的后缀有很多，比如.com,.top，.net等等，价格也不一样，便宜的只需要几元人民币。选完域名付完钱，在使用域名前还需要一个认证的过程，中国大陆可以选择的只有身份证。<br><strong>这里必须吐槽一下，一般需要身份证复印件的都是正反面，然后我就上传了正反面。第一次给拒绝了，理由是空白边缘留的不够宽。这次我认认真真，拍了正反面在照片中间再次上传，等了一天，又给我拒绝了，还是相同的理由！我就很纳闷了。打电话给客服问了才知道，只需要正面，但是他们审核的时候没有这个选项，就给我随便找了个理由。。。</strong>第三次终于申请成功了。</p>
+<p>接下来就是域名解析服务器替换，好像他们也提供，不替换是否可行没试。我用国内的DNSpod。</p>
+<p>首先需要在godaddy上更改域名服务器。DNSpod对于在godaddy上更改域名服务器的说明已经过时了</p>
+<p><img src="https://i.loli.net/2020/02/24/Tdk3JMGxInWoLS2.png" alt="选区_017.png"></p>
+<p>替换后如上图</p>
+<p>等一段时间，我等了半小时吧，等DNSpod上显示状态为正常就可以了</p>
+<p><img src="https://i.loli.net/2020/02/24/sv1zMHZrExTOlAa.png" alt="选区_018.png"></p>
+<p>现在再进去添加两条纪录</p>
+<p><img src="https://i.loli.net/2020/02/24/1d65DsLzUfHqRPW.png" alt="选区_020.png"></p>
+<p>上面的记录值是用下面的命令得到的。这两条表示不输入www和输入www都导向记录值</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ping xxx.github.io</span><br></pre></td></tr></table></figure>
+
+<p>最后，在github上填写替换的域名。我用的hexo部署的，所以在source目录下新建CNAME文件，内容为will21.cn。部署到服务器。</p>
+<p>访问will21.cn，搞定！</p>
+]]></content>
+      <categories>
+        <category>other</category>
+      </categories>
+      <tags>
+        <tag>github个人网站</tag>
+        <tag>域名修改</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github个人网站替换自定义域名</title>
+    <url>/2020/02/24/github%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%9B%B4%E6%94%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>首先非常感谢github提供的个人网站功能，然后感谢hexo提供了方便的写博客手段。<br>github个人建站，一般访问网站名为xxx.github.io，这种名字对于强迫症患者来说真的是无法忍受。但是github也提供了更改为自定义域名功能，非常人性化。</p>
+<a id="more"></a>
+<p>所以如果你没有把博客迁到国内服务器的需求，只需要替换一下域名即可。下面说一下我的操作步骤，主要还在申请域名上。</p>
+<h3 id="域名申请"><a href="#域名申请" class="headerlink" title="域名申请"></a>域名申请</h3><p>经过我的一番调研，最终选用了godaddy的域名服务。国内的也有很多，大家根据需要选择。<br>接下来就是申请域名了。先选择一个自己喜欢的域名前缀，最好比较好记，方便自己也方便他人。域名的后缀有很多，比如.com,.top，.net等等，价格也不一样，便宜的只需要几元人民币。选完域名付完钱，在使用域名前还需要一个认证的过程，中国大陆可以选择的只有身份证。<br><strong>这里必须吐槽一下，一般需要身份证复印件的都是正反面，然后我就上传了正反面。第一次给拒绝了，理由是空白边缘留的不够宽。这次我认认真真，拍了正反面在照片中间再次上传，等了一天，又给我拒绝了，还是相同的理由！我就很纳闷了。打电话给客服问了才知道，只需要正面，但是他们审核的时候没有这个选项，就给我随便找了个理由。。。</strong>第三次终于申请成功了。</p>
+<p>接下来就是域名解析服务器替换，好像他们也提供，不替换是否可行没试。我用国内的DNSpod。</p>
+<p>首先需要在godaddy上更改域名服务器。DNSpod对于在godaddy上更改域名服务器的说明已经过时了</p>
+<p><img src="https://i.loli.net/2020/02/24/Tdk3JMGxInWoLS2.png" alt="选区_017.png"></p>
+<p>替换后如上图</p>
+<p>等一段时间，我等了半小时吧，等DNSpod上显示状态为正常就可以了</p>
+<p><img src="https://i.loli.net/2020/02/24/sv1zMHZrExTOlAa.png" alt="选区_018.png"></p>
+<p>现在再进去添加两条纪录</p>
+<p><img src="https://i.loli.net/2020/02/24/1d65DsLzUfHqRPW.png" alt="选区_020.png"></p>
+<p>上面的记录值是用下面的命令得到的。这两条表示不输入www和输入www都导向记录值</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ping xxx.github.io</span><br></pre></td></tr></table></figure>
+
+<p>最后，在github上填写替换的域名。我用的hexo部署的，所以在source目录下新建CNAME文件，内容为will21.cn。部署到服务器。</p>
+<p>访问will21.cn，搞定！</p>
+]]></content>
+      <categories>
+        <category>other</category>
+      </categories>
+      <tags>
+        <tag>github个人网站</tag>
+        <tag>域名修改</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hive udf&amp;udaf</title>
-    <url>/2020/02/21/hive-udf/</url>
-    <content><![CDATA[<p>hive自定义函数(udf)和自定义聚合函数(udaf,user defined aggregation function)使用<a id="more"></a></p>
-<h1 id="hive-udf"><a href="#hive-udf" class="headerlink" title="hive udf"></a>hive udf</h1><h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p>查找array中是否包含被查询值</p>
+    <url>/2020/02/21/hive/hive-udf/</url>
+    <content><![CDATA[<p>hive为我们定义了很多函数，大多数情况下是能够满足我们的需求的。但是在有些情况下，很有必要自己定义一些函数，这样使用起来非常方便。这就是自定义函数(udf)和自定义聚合函数(udaf,user defined aggregation function)。udf是每行返回一个结果，而udaf则是聚合的结果，多行产生一个结果。另外还有udtf，是一行产生多个结果。目前我还没有用到过udtf，就先不介绍它了。下面分别用两个示例介绍udf和udaf<a id="more"></a></p>
+<h1 id="udf"><a href="#udf" class="headerlink" title="udf"></a>udf</h1><h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p>查找array中是否包含被查询值</p>
 <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ul>
 <li><p>测试数据准备</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">zhangsan        beijing,shanghai,tianjin,hangzhou</span><br><span class="line">lisi    changchu,chengdu,wuhan</span><br></pre></td></tr></table></figure>
@@ -29,6 +87,61 @@
 <blockquote>
 <p>参考：<a href="https://blog.csdn.net/Nougats/article/details/71158318" target="_blank" rel="noopener">https://blog.csdn.net/Nougats/article/details/71158318</a></p>
 </blockquote>
+<h1 id="udaf"><a href="#udaf" class="headerlink" title="udaf"></a>udaf</h1><blockquote>
+<p>参考： </p>
+<p><a href="https://blog.51cto.com/xiaolanlan/2397771" target="_blank" rel="noopener">https://blog.51cto.com/xiaolanlan/2397771</a></p>
+<p><a href="https://www.cnblogs.com/Rudd/p/5137612.html" target="_blank" rel="noopener">https://www.cnblogs.com/Rudd/p/5137612.html</a></p>
+</blockquote>
+<h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><p>hive的udtf有两种，Simple和Generic。这是由于历史问题，Simple先出现，但是因为反射问题效率较低，所以现在推荐使用Generic的写法。</p>
+<ul>
+<li>Simple。即继承<code>org.apache.hadoop.hive.ql.exec.UDAF</code>类，并在派生类中以静态内部类的方式实现<code>org.apache.hadoop.hive.ql.exec.UDAFEvaluator</code>接口。在Hive源码包<code>org.apache.hadoop.hive.contrib.udaf.example</code>中包含几个示例。可以直接参阅。但是这些接口已经被注解为Deprecated，建议不要使用这种方式开发新的UDAF函数。</li>
+<li>Generic。这是Hive社区推荐的新的写法，以抽象类代替原有的接口。新的抽象类<code>org.apache.hadoop.hive.ql.udf.generic.AbstractGenericUDAFResolver</code>替代老的UDAF接口，新的抽象类<code>org.apache.hadoop.hive.ql.udf.generic.GenericUDAFEvaluator</code>替代老的UDAFEvaluator接口。</li>
+</ul>
+<p>hive是立足于hadoop之上，也就是hive基于mapreduce，hive sql最终还是会转化为mapreduce执行。为了实现mapreduce，udaf中用model来表示mapreduce各个阶段。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static enum Mode &#123;</span><br><span class="line">        PARTIAL1,</span><br><span class="line">        PARTIAL2,</span><br><span class="line">        FINAL,</span><br><span class="line">        COMPLETE;</span><br><span class="line"></span><br><span class="line">        private Mode() &#123;&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>PARTIAL1: 这个是mapreduce的map阶段:从原始数据到部分数据聚合，将会调用<strong>iterate()</strong>和*<em>terminatePartial() *</em></li>
+<li>PARTIAL2: 这个是mapreduce的map端的Combiner阶段，负责在map端合并map的数据::从部分数据聚合到部分数据聚合，将会调用<strong>merge()</strong> 和 <strong>terminatePartial()</strong> </li>
+<li>FINAL: mapreduce的reduce阶段，从部分数据的聚合到完全聚合，将会调用<strong>merge()</strong>和*<em>terminate() *</em></li>
+</ul>
+<hr>
+<ul>
+<li><p>COMPLETE: 如果出现了这个阶段，表示mapreduce只有map，没有reduce，所以map端就直接出结果了，从原始数据直接到完全聚合，将会调用 <strong>iterate()</strong>和<strong>terminate()</strong></p>
+<p><img src="https://i.loli.net/2020/02/23/DlNqFRHnZ6zLuoA.png" alt="image.png"></p>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2020/02/23/IKn3Vv57jPScxs8.png" alt="image.png"></p>
+<p>udaf骨架示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class GenericUDAFHistogramNumeric extends AbstractGenericUDAFResolver &#123;</span><br><span class="line">  static final Log LOG &#x3D; LogFactory.getLog(GenericUDAFHistogramNumeric.class.getName());</span><br><span class="line"> </span><br><span class="line">  @Override</span><br><span class="line">  public GenericUDAFEvaluator getEvaluator(GenericUDAFParameterInfo info) throws SemanticException &#123;</span><br><span class="line">    &#x2F;&#x2F; 这里主要做类型检查</span><br><span class="line"> </span><br><span class="line">    return new GenericUDAFHistogramNumericEvaluator();</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  public static class GenericUDAFHistogramNumericEvaluator extends GenericUDAFEvaluator &#123;</span><br><span class="line">         &#x2F;&#x2F; 确定各个阶段输入输出参数的数据格式ObjectInspectors</span><br><span class="line">         public  ObjectInspector init(Mode m, ObjectInspector[] parameters) throws HiveException&#123;</span><br><span class="line">             return  null;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         &#x2F;&#x2F; 保存数据聚集结果的类</span><br><span class="line">         public AggregationBuffer getNewAggregationBuffer() throws HiveException &#123;</span><br><span class="line">             return null;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">		 &#x2F;&#x2F; 重置聚集结果</span><br><span class="line">         public void reset(AggregationBuffer aggregationBuffer) throws HiveException &#123;&#125;</span><br><span class="line"></span><br><span class="line">         &#x2F;&#x2F; map阶段，迭代处理输入sql传过来的列数据 </span><br><span class="line">         public void iterate(AggregationBuffer aggregationBuffer, Object[] objects) throws HiveException &#123;&#125;</span><br><span class="line"></span><br><span class="line">         &#x2F;&#x2F; map与combiner结束返回结果，得到部分数据聚集结果</span><br><span class="line">         public Object terminatePartial(AggregationBuffer aggregationBuffer) throws HiveException &#123;</span><br><span class="line">             return null;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         &#x2F;&#x2F; combiner合并map返回的结果，还有reducer合并mapper或combiner返回的结果。</span><br><span class="line">         public void merge(AggregationBuffer aggregationBuffer, Object o) throws HiveException &#123;&#125;</span><br><span class="line"></span><br><span class="line">		 &#x2F;&#x2F; reducer阶段，输出最终结果 </span><br><span class="line">         public Object terminate(AggregationBuffer aggregationBuffer) throws HiveException &#123;</span><br><span class="line">             return null;</span><br><span class="line">         &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="功能-1"><a href="#功能-1" class="headerlink" title="功能"></a>功能</h3><p>统计字符数</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">package com.will;</span><br><span class="line"></span><br><span class="line">import org.apache.hadoop.hive.ql.exec.UDFArgumentTypeException;</span><br><span class="line">import org.apache.hadoop.hive.ql.metadata.HiveException;</span><br><span class="line">import org.apache.hadoop.hive.ql.parse.SemanticException;</span><br><span class="line">import org.apache.hadoop.hive.ql.udf.generic.AbstractGenericUDAFResolver;</span><br><span class="line">import org.apache.hadoop.hive.ql.udf.generic.GenericUDAFEvaluator;</span><br><span class="line">import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector;</span><br><span class="line">import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorFactory;</span><br><span class="line">import org.apache.hadoop.hive.serde2.objectinspector.PrimitiveObjectInspector;</span><br><span class="line">import org.apache.hadoop.hive.serde2.typeinfo.TypeInfo;</span><br><span class="line">import org.apache.hadoop.hive.serde2.typeinfo.TypeInfoUtils;</span><br><span class="line"></span><br><span class="line">public class TotalNumOfLetttersGenericUDAF extends AbstractGenericUDAFResolver &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public GenericUDAFEvaluator getEvaluator(TypeInfo[] parameters) throws SemanticException &#123;</span><br><span class="line"></span><br><span class="line">        if (parameters.length !&#x3D; 1) &#123;</span><br><span class="line">            throw new UDFArgumentTypeException(parameters.length - 1,&quot;Exactly one argument is expected.&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ObjectInspector oi &#x3D; TypeInfoUtils.getStandardJavaObjectInspectorFromTypeInfo(parameters[0]);</span><br><span class="line"></span><br><span class="line">        if (oi.getCategory() !&#x3D; ObjectInspector.Category.PRIMITIVE)&#123;</span><br><span class="line">            throw new UDFArgumentTypeException(0,</span><br><span class="line">                    &quot;Argument must be PRIMITIVE, but &quot;</span><br><span class="line">                    + oi.getCategory().name()</span><br><span class="line">                    + &quot; was passed.&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        PrimitiveObjectInspector inputOI &#x3D; (PrimitiveObjectInspector) oi;</span><br><span class="line">        if (inputOI.getPrimitiveCategory() !&#x3D; PrimitiveObjectInspector.PrimitiveCategory.STRING)&#123;</span><br><span class="line">            throw new UDFArgumentTypeException(0, &quot;Argument must be String, but &quot;</span><br><span class="line">                     + inputOI.getPrimitiveCategory().name()</span><br><span class="line">                     + &quot; was passed.&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return new TotalNumOfLettersEvaluator();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static class TotalNumOfLettersEvaluator extends GenericUDAFEvaluator&#123;</span><br><span class="line">        PrimitiveObjectInspector inputOI;</span><br><span class="line">        ObjectInspector outputOI;</span><br><span class="line">        PrimitiveObjectInspector integerOI;</span><br><span class="line"></span><br><span class="line">        int total &#x3D; 0;</span><br><span class="line">        private boolean warned &#x3D; false;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">         public  ObjectInspector init(Mode m, ObjectInspector[] parameters) throws HiveException&#123;</span><br><span class="line">            assert (parameters.length &#x3D;&#x3D; 1);</span><br><span class="line">            super.init(m, parameters);</span><br><span class="line"></span><br><span class="line">            &#x2F;&#x2F;map阶段读取sql列，输入为String基础数据格式</span><br><span class="line">            if (m &#x3D;&#x3D; Mode.PARTIAL1 || m &#x3D;&#x3D; Mode.COMPLETE) &#123;</span><br><span class="line">                inputOI &#x3D; (PrimitiveObjectInspector) parameters[0];</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                &#x2F;&#x2F;其余阶段，输入为Integer基础数据格式</span><br><span class="line">                integerOI &#x3D; (PrimitiveObjectInspector) parameters[0];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            &#x2F;&#x2F; 指定各个阶段输出数据格式都为Integer类型</span><br><span class="line">            outputOI &#x3D; ObjectInspectorFactory.getReflectionObjectInspector(Integer.class,</span><br><span class="line">                                        ObjectInspectorFactory.ObjectInspectorOptions.JAVA);</span><br><span class="line"></span><br><span class="line">            return outputOI;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F;存储当前字符总数的类</span><br><span class="line">        static class LetterSumAgg implements AggregationBuffer &#123;</span><br><span class="line">            int sum &#x3D; 0;</span><br><span class="line">            void add(int num)&#123;</span><br><span class="line">                sum +&#x3D; num;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">         public AggregationBuffer getNewAggregationBuffer() throws HiveException &#123;</span><br><span class="line">             LetterSumAgg result &#x3D; new LetterSumAgg();</span><br><span class="line">             return result;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         public void reset(AggregationBuffer aggregationBuffer) throws HiveException &#123;</span><br><span class="line">             LetterSumAgg myagg &#x3D; new LetterSumAgg();</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         public void iterate(AggregationBuffer agg, Object[] parameters) throws HiveException &#123;</span><br><span class="line">             assert (parameters.length &#x3D;&#x3D; 1);</span><br><span class="line">             if (parameters[0] !&#x3D; null) &#123;</span><br><span class="line">                 LetterSumAgg myagg &#x3D; (LetterSumAgg) agg;</span><br><span class="line">                 Object p1 &#x3D; ((PrimitiveObjectInspector) inputOI).getPrimitiveJavaObject(parameters[0]);</span><br><span class="line">                 myagg.add(String.valueOf(p1).length());</span><br><span class="line">             &#125;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         public Object terminatePartial(AggregationBuffer agg) throws HiveException &#123;</span><br><span class="line">             LetterSumAgg myagg &#x3D; (LetterSumAgg) agg;</span><br><span class="line">             total +&#x3D; myagg.sum;</span><br><span class="line">             return total;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         public void merge(AggregationBuffer agg, Object partial) throws HiveException &#123;</span><br><span class="line">             if (partial !&#x3D; null) &#123;</span><br><span class="line">                 LetterSumAgg myagg1 &#x3D; (LetterSumAgg) agg;</span><br><span class="line">                 Integer partialSum &#x3D; (Integer) integerOI.getPrimitiveJavaObject(partial);</span><br><span class="line">                 LetterSumAgg myagg2 &#x3D; new LetterSumAgg();</span><br><span class="line">                 myagg2.add(partialSum);</span><br><span class="line">                 myagg1.add(myagg2.sum);</span><br><span class="line">             &#125;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         public Object terminate(AggregationBuffer agg) throws HiveException &#123;</span><br><span class="line">             LetterSumAgg myagg &#x3D; (LetterSumAgg) agg;</span><br><span class="line">             total &#x3D; myagg.sum;</span><br><span class="line">             return myagg.sum;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>首先准备数据</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hive&gt; select * from users;</span><br><span class="line">OK</span><br><span class="line">zhangsan	[&quot;beijing&quot;,&quot;shanghai&quot;,&quot;tianjin&quot;,&quot;hangzhou&quot;]</span><br><span class="line">lisi	[&quot;changchu&quot;,&quot;chengdu&quot;,&quot;wuhan&quot;]</span><br></pre></td></tr></table></figure>
+
+
+
+<p>然后添加jar包</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; ADD JAR &#x2F;home&#x2F;will&#x2F;work&#x2F;projects&#x2F;hive_udf_test&#x2F;target&#x2F;hive_udf_test-1.0-SNAPSHOT.jar;</span><br><span class="line">Added [&#x2F;home&#x2F;will&#x2F;work&#x2F;projects&#x2F;hive_udf_test&#x2F;target&#x2F;hive_udf_test-1.0-SNAPSHOT.jar] to class path</span><br><span class="line">Added resources: [&#x2F;home&#x2F;will&#x2F;work&#x2F;projects&#x2F;hive_udf_test&#x2F;target&#x2F;hive_udf_test-1.0-SNAPSHOT.jar]</span><br></pre></td></tr></table></figure>
+
+
+
+<p>定义函数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hive&gt;  CREATE TEMPORARY FUNCTION letters as &#39;com.will.TotalNumOfLetttersGenericUDAF&#39;;</span><br><span class="line">OK</span><br><span class="line">Time taken: 0.049 seconds</span><br></pre></td></tr></table></figure>
+
+
+
+<p>执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hive&gt; select letters(name) from users;</span><br><span class="line">Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1</span><br><span class="line">2020-02-23 13:25:06,087 Stage-1 map &#x3D; 0%,  reduce &#x3D; 0%</span><br><span class="line">2020-02-23 13:25:11,426 Stage-1 map &#x3D; 100%,  reduce &#x3D; 0%, Cumulative CPU 2.03 sec</span><br><span class="line">2020-02-23 13:25:16,607 Stage-1 map &#x3D; 100%,  reduce &#x3D; 100%, Cumulative CPU 4.01 sec</span><br><span class="line">MapReduce Total cumulative CPU time: 4 seconds 10 msec</span><br><span class="line">Total MapReduce CPU Time Spent: 4 seconds 10 msec</span><br><span class="line">OK</span><br><span class="line">12</span><br><span class="line">Time taken: 23.819 seconds, Fetched: 1 row(s)</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>Hive</category>
@@ -41,7 +154,7 @@
   </entry>
   <entry>
     <title>hive源码调试入门</title>
-    <url>/2020/02/21/hive-source-modification/</url>
+    <url>/2020/02/21/hive/hive-source-modification/</url>
     <content><![CDATA[<p>在windows上折腾安装好了hadoop，hive因为文件路径太长不支持等各种奇奇怪怪的问题始终运行不起来，下了大决心放弃windows系统，unbuntu走起！重装系统还算顺利，几个小时搞定。然后就是ubuntu上运行hadoop,成功; ubuntu上运行hive，成功！下一步hive源码走起。<a id="more"></a></p>
 <p>hive依赖hadoop，看hive启动脚本，最终是调用hadoop启动，而hadoop最终还是执行的java -jar xxx.jar形式，所以决定先从hive java源码入口看。先试一试改动源码打印个信息。</p>
 <p>首先在hive的main函数入口增加一行</p>
@@ -65,7 +178,7 @@
   </entry>
   <entry>
     <title>hadoop在windows 10下安装步骤</title>
-    <url>/2020/02/15/hadoop-hadoop%E5%AE%89%E8%A3%85/</url>
+    <url>/2020/02/15/hadoop/hadoop-hadoop%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>首先劝大家在有条件情况下能用mac就用mac，再不行用linux系统，在windows上运行hadoop不是一个好主意！真的好麻烦。。。</p>
 <a id="more"></a>
 
@@ -128,7 +241,7 @@
   </entry>
   <entry>
     <title>基础知识</title>
-    <url>/2020/02/12/linux-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <url>/2020/02/12/linux/linux-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<h1 id="计算机"><a href="#计算机" class="headerlink" title="计算机"></a>计算机</h1><h3 id="组成部分"><a href="#组成部分" class="headerlink" title="组成部分"></a>组成部分</h3><ul>
 <li>输入单元</li>
 <li>CPU<a id="more"></a></li>
@@ -166,11 +279,11 @@
   </entry>
   <entry>
     <title>linux---目录</title>
-    <url>/2020/02/09/Linux%E7%9B%AE%E5%BD%95/</url>
+    <url>/2020/02/09/linux/Linux%E7%9B%AE%E5%BD%95/</url>
     <content><![CDATA[<p>linux系统是一种自由和开放源码的类UNIX操作系统。该操作系统的内核由林纳斯·托瓦兹在1991年10月5日首次发布，在加上用户空间的应用程序之后，成为Linux操作系统[1]。linux系统作为当前最流行的系统之一，有各种版本，如centos, ubuntu等，当前移动互联网终端之王—手机—的系统之一Android也是基于linux，可以说随处可以见到linux的身影。</p>
 <p>在大数据开发中，linux系统必然会涉及，是必备的基础技能。下面将分为以下一系列文章进行介绍：</p>
 <ul>
-<li><a href="/2020/02/12/linux-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="基础知识">基础知识</a></li>
+<li><a href="/2020/02/12/linux/linux-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="基础知识">基础知识</a></li>
 <li>常用命令</li>
 <li>文件权限</li>
 <li>shell脚本</li>
@@ -188,7 +301,7 @@
   </entry>
   <entry>
     <title>RDD转换</title>
-    <url>/2019/11/02/RDD%E8%BD%AC%E6%8D%A2/</url>
+    <url>/2019/11/02/spark/RDD%E8%BD%AC%E6%8D%A2/</url>
     <content><![CDATA[<h1 id="RDD"><a href="#RDD" class="headerlink" title="RDD"></a>RDD</h1><p>RDD(Resilient Distributed Datasets，弹性分布式数据集)，是一个惰性计算、静态类型的分布式数据集合，是Spark实现并发计算的基础数据结构。<a id="more"></a></p>
 <p>RDD包含以下特性（前3个必须有，后两个可选）：</p>
 <ol>
@@ -228,12 +341,12 @@
   </entry>
   <entry>
     <title>spark---目录</title>
-    <url>/2019/11/02/spark%E7%9B%AE%E5%BD%95/</url>
+    <url>/2019/11/02/spark/spark%E7%9B%AE%E5%BD%95/</url>
     <content><![CDATA[<p>Spark作为一个开源大数据分析引擎，分布式、计算速度快是其显著的优势，特别适用于机器学习（ML）等计算中需要迭代的算法。下面将主要针对Spark Core部分，分为以下一系列文章进行介绍：</p>
 <ul>
-<li><a href="/2019/10/24/spark/" title="Spark绪论">Spark绪论</a></li>
-<li><a href="/2019/11/02/spark%E6%9E%B6%E6%9E%84/" title="Spark架构">Spark架构</a></li>
-<li><a href="/2019/11/02/RDD%E8%BD%AC%E6%8D%A2/" title="RDD转换">RDD转换</a></li>
+<li><a href="/2019/10/24/spark/spark/" title="Spark绪论">Spark绪论</a></li>
+<li><a href="/2019/11/02/spark/spark%E6%9E%B6%E6%9E%84/" title="Spark架构">Spark架构</a></li>
+<li><a href="/2019/11/02/spark/RDD%E8%BD%AC%E6%8D%A2/" title="RDD转换">RDD转换</a></li>
 <li>键值对处理</li>
 </ul>
 <blockquote>
@@ -249,7 +362,7 @@
   </entry>
   <entry>
     <title>spark架构</title>
-    <url>/2019/11/02/spark%E6%9E%B6%E6%9E%84/</url>
+    <url>/2019/11/02/spark/spark%E6%9E%B6%E6%9E%84/</url>
     <content><![CDATA[<h1 id="Spark架构"><a href="#Spark架构" class="headerlink" title="Spark架构"></a>Spark架构</h1><p><img src="https://i.loli.net/2019/11/02/TLMwH9aV1xStu5Y.png" alt=""></p>
 <a id="more"></a>
 
@@ -269,7 +382,7 @@
   </entry>
   <entry>
     <title>Spark绪论</title>
-    <url>/2019/10/24/spark/</url>
+    <url>/2019/10/24/spark/spark/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
 <li><p>为什么会有spark</p>
 <p>现在的计算机性能越来越高，单台机器处理M级别的数据简直小菜一碟。但是如果数据量更大，达到G、T甚至P、E级别，这时单台机器的性能可能就有点不够了。也许你会反驳，目前世界上最快的超级计算<a id="more"></a> 机“Summit”浮点运算速度峰值可达20亿亿次/秒，这相当快了吧！确实很快，但是它的使用和维护费用都很高呀，一般人或者说公司根本负担不起。所以聪明的人类就发明了大数据工具。虽然单台机器的计算性能可能并不是很好，但是如果多台机器联合起来一起做计算，那么不就可以实现相对廉价的机器实现超大数据规模的计算吗？所以诞生了大数据工具Hadoop。Hadoop基于HDFS和Map-Reduce奠定了大数据领域的霸主地位。随后各种工具层出不穷。Spark针对Hadoop计算中慢的缺点，即每次计算结果都要读写到磁盘导致速度变慢的设计，作了如下改进：</p>

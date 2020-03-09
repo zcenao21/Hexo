@@ -371,3 +371,22 @@ OK
 Time taken: 23.819 seconds, Fetched: 1 row(s)
 ```
 
+
+
+# my own udaf
+
+### 要解决的问题
+
+有一个hive表，其中两列分别代表时间戳和事件。目标是得到指定时间范围的所有事件。
+
+
+
+### 分析
+
+根据上一部分的介绍，要实现聚合首先要设计如何存储，传输的问题。在这个过程中我仔细研究了hive udaf示例的histogram设计，然后设计了自己的udaf。聚合存储使用hashmap，初步解析结果使用string的list保存。
+
+
+
+代码
+
+[github 演示项目](https://github.com/zcenao21/hive-udaf)

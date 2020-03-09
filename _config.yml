@@ -93,7 +93,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: light
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -103,7 +103,7 @@ deploy:
   branch: master
 
 search:
-  path: search.xml
+  path: ./public/search.xml
   field: post
   format: html
   limit: 10000

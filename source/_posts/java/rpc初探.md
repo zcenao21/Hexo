@@ -24,9 +24,7 @@ RPC(Remote Procedure Call)，即远程过程调用，主要用于分布式情景
 
 ![rpc](https://github.com/zcenao21/photos-blog/blob/main/rpc-start/rpc.png?raw=true)
 
-### 简单实现
-
----
+# 简单实现
 
 为了更好理解RPC，参考知乎作者分享（见文末）的内容，自己敲了一遍（已上传[github](https://github.com/zcenao21/rpc-learn)）
 

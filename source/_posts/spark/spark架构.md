@@ -11,7 +11,7 @@ categories:
 
 # Spark架构
 
-![](https://i.loli.net/2019/11/02/TLMwH9aV1xStu5Y.png)
+![](https://github.com/zcenao21/photos-blog/blob/main/spark/spark.png?raw=true)
 
 <!--more-->
 
@@ -23,11 +23,11 @@ categories:
 
  Spark可以在仅有单个JVM的单台机器上运行，但更常与分布式存储系统和集群管理器串联组成如下数据处理系统。分布式存储系统用来存放数据，集群管理器用来协调管理集群spark任务。Spark目前支持4种集群管理器：Standalone集群管理器，Apache Mesos，Hadoop YARN，EC2。
 
-![Spark](https://i.loli.net/2019/11/02/5ijlposeYMDScIU.png)
+![Spark](https://github.com/zcenao21/photos-blog/blob/main/spark/spark-storage.png?raw=true)
 
 # spark生态系统
 
-![spark生态系统](https://i.loli.net/2019/11/02/B2JjgU7hczEba1r.png)
+![spark生态系统](https://github.com/zcenao21/photos-blog/blob/main/spark/spark-env.png?raw=true)
 
 
 

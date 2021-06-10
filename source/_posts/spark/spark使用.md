@@ -71,6 +71,10 @@ spark.history.fs.logDirectory    file:/home/will/study/projects/spark/tmp/spark-
 ./spark-submit --class org.apache.spark.examples.SparkPi --master spark://localhost:7077 --conf spark.driver.extraJavaOptions="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=7777" ../examples/target/original-spark-examples_2.12-3.2.0-SNAPSHOT.jar 
 ```
 
+> 如果要查看详细Debug信息，可以在jar包(../examples/target/original-spark-examples_2.12-3.2.0-SNAPSHOT.jar)前设置参数：--verbose=true
+>
+> ./spark-submit --class org.apache.spark.examples.SparkPi --master spark://localhost:7077 --conf spark.driver.extraJavaOptions="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=7777"  --verbose=true ../examples/target/original-spark-examples_2.12-3.2.0-SNAPSHOT.jar
+
 然后在IDEA中设置调试参数
 
 ![spark-submit-debug.png](https://github.com/zcenao21/photos-blog/raw/main/spark/spark-submit-debug.png)
@@ -194,7 +198,7 @@ val spark = SparkSession
 export SPARK_MASTER_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=10000"
 ```
 
-然后在运行start-master.sh，运行后在命令行执行`jps`
+然后再运行start-master.sh，运行后在命令行执行`jps`
 
 ```
 8817 Main
@@ -203,3 +207,9 @@ export SPARK_MASTER_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend
 ```
 
 再在idea端增加remote配置，端口配置为上述参数中的10000，use module classpath选择spark-core_2.12。之后在org.apache.spark.deploy.master.Master中的main函数上打断点。最后点击Debug开始调试
+
+
+
+### 待后续探索
+
+1.Thread.setDefaultUncaughtExceptionHandler
